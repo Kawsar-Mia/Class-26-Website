@@ -1,0 +1,688 @@
+body,p,span,h1,h2,h3,h4,h5,h6,a{
+    font-family: 'Roboto', sans-serif;
+
+    font-family: 'Rubik', sans-serif;
+
+    font-family: 'Work Sans', sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+.bg-color{
+    background: #f9fafb;
+}
+
+/* Haeder Css */
+.main-header .container-fluid,
+.slider-section .container-fluid{
+    max-width: 1480px;
+}
+body .btn-primary{
+    background-color: #e73a3e !important;
+    border-color: #e73a3e;
+    padding: 10px 40px;
+    font-size: 16px;
+
+    position: relative;
+    z-index: 1;
+}
+body .btn-primary:hover{
+    border-color: #111;
+}
+body .btn-primary::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #111;
+    border-color: #111;
+
+    z-index: -1;
+    transition: .5s;
+}
+body .btn-primary:hover::after{
+    width: 100%;
+}
+
+/* header Menu */
+ul.header-menu{}
+ul.header-menu li{}
+ul.header-menu li a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #111;
+    font-weight: 600;
+}
+ul.header-menu li a:hover{}
+
+/* Dropdown Mennu Css */
+
+ul.header-menu li{
+    position: relative;
+}
+ul.header-menu li ul{
+    position: absolute;
+    width: 300px;
+    left: 0;
+    top: 160%;
+    background: #fafafa;
+    list-style: none;
+    padding: 10px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+   
+
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease-in-out;
+}
+ul.header-menu li ul li{
+    flex-direction: column;
+}
+ul.header-menu li:hover ul{
+   opacity: 1;
+   visibility: visible; 
+   top: 100%;
+}
+ul.header-menu li ul li a{
+    color: #e73a3e;
+}
+
+.header-info{}
+.header-search{
+    width: 60px;
+    font-size: 22px;
+    text-align: center;
+    margin-right: 20px;
+    border-right: 1px solid #ddd;
+   
+}
+.header-call-icon{
+    font-size: 33px;
+    color: #e73a3e;
+}
+.header-call-info span{
+    color: #606060;
+}
+.header-call-info a{
+    font-weight: 600;
+    color: #111;
+    text-decoration: none;
+    font-size: 18px;
+}
+.header-call{
+    width: 220px;
+}
+.header-button{}
+
+/* Slider-section */
+.slider-section{
+    background: url(./img/main-banner2.jpg) no-repeat top center;
+    background-size: cover;
+}
+.slider-content-wrap{
+  height: 90vh;
+  display: flex;
+  align-items: center;  
+  
+  position: relative;
+}
+.slider-content h6{
+  color: #e73a3e;
+}
+.slider-content h1{
+    font-size: 60px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.slider-content p{
+    font-weight: 400;
+    color: #606060;
+    font-size: 20px;
+}
+
+.slider-social{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.slider-social ul{
+    list-style: none;
+    padding-left: 0;
+}
+.slider-social ul li{
+    margin-left: 10px;
+}
+.slider-social ul li span{
+    font-size: 18px;
+    display: inline-block;
+    margin-right: 50px;
+    
+    position: relative;
+}
+.slider-social ul li span::after{
+    content: "";
+    height: 1px;
+    background: #111;
+    width: 35px;
+    position: absolute;
+    right: -45px;
+   top: 51%;
+}
+.slider-social ul li a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 12px;
+    color: #111;
+    font-size: 20px;
+}
+
+/*  Begain Part 2 CSS  */
+
+.logo-section{
+    border-bottom: 1px solid #ddd;
+}
+.client-logo{}
+.client-logo ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+/* About Section html */
+
+.about-image{ 
+    position: relative;
+}
+.about-img-text{
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+    background: url(./img/shape.png);
+    height: 200px;
+    width: 200px;
+    background-size: contain;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-img-text h2{}
+.about-img-text p{}
+
+.about-text{
+}
+.about-text h6{
+    color: #e73a3e;
+    font-weight: 400;
+}
+.about-text h2{
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.about-text p{
+    color: #606060;
+    font-size: 18px;
+}
+.about-text strong{
+    color: #606060;
+    font-size: 20px;
+    font-weight: 500;
+}
+.about-text ul{
+    list-style: none;
+    padding-left: 0;
+    padding: 20px;
+}
+.about-text ul li{
+    padding: 2px 0;
+    font-size: 20px;
+}
+.about-text ul li::before{
+    content: " \f00c ";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    color: #e73a3e;
+    font-size: 20px;
+}
+
+/* Class Part-3 */
+
+/* Why Choose Section CSS */
+
+/* Img Part */
+.about-text{
+    position: relative;
+}
+.play-animation-btn{
+    width: 90px;
+    height: 90px;
+    display: inline-block;
+    background: #fff;
+    font-size: 60px;
+    text-align: center;
+    line-height: 90px;
+    border-radius: 50%;
+    color: #e73a3e;
+    position: absolute;
+    right: 42%;
+    bottom: 55px; 
+}
+
+.play-animation-btn::before{
+    content: "";
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #e73a3e;
+    border-radius: 50%;
+    animation: playbtn 1.8s ease-out infinite;
+}
+@keyframes playbtn{
+    0%,30%{
+        transform: scale(0);
+        opacity: 1;
+    }
+    50%{
+        transform: scale(1.5);
+        opacity: .7;
+    }
+    100%{
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+
+/* text icon Part */
+.why-us-item{
+    background: #fff;
+    padding: 30px;
+    margin-bottom: 30px;
+    
+    overflow: hidden;
+    position: relative;
+
+    transition: .5s;
+}
+.why-us-item:hover{
+    transform: translateY(-15px);
+}
+.why-us-item::before{
+    content: " ";
+    position: absolute;
+    top: -160px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 90%;
+    height: 70%;
+    background: #fdebeb;
+    border-radius: 50%;
+}
+.why-us-item .us-icon{
+    position: relative;
+    z-index: 1;
+}
+.why-us-item .us-icon i {
+    color: #e73a3e;
+    font-size: 30px;
+    background: #fff;
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+
+    transition: .5s;
+}
+.why-us-item:hover .us-icon i{
+    color: #fff;
+    background: #e73a3e;
+}
+.mtop4{
+    margin-top: -30px;
+}
+.us-icon{}
+.us-icon h3{}
+.us-icon p{}
+
+
+/* Part 4 Class */
+
+/* Apply-Now Section left CSS*/
+
+.apply-text h5{
+  color: #e73a3e;
+}
+.apply-text h1{
+  font-size: 50px;
+  font-weight: 400;
+}
+.apply-text p{
+    color: #606060;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.apply-now-section{}
+.applay-now-left-item{}
+
+
+.step-timeline{}
+.step-timeline ul{
+    list-style: none;
+    position: relative;
+    padding-left: 60px;
+}
+.step-timeline ul::before{
+    content: " ";
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    width: 1px;
+    background: #e73a3e;
+    height: calc(100% - 100px);
+
+}
+.step-timeline ul li{
+    margin-bottom: 25px;
+    position: relative;
+}
+.step-timeline ul li::before{
+    content: attr(data-counter);
+    position: absolute;
+    left: -65px;
+    top: 0;
+    height: 40px;
+    width: 40px;
+    background: #f9fafb;
+    border: 1px solid #e73a3e;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+}
+.step-timeline ul li strong{
+    font-size: 25px;
+    display: block;
+    margin-bottom: 10px;
+}
+.step-timeline ul li p{
+    color: #606060;
+}
+
+/* Apply Now Right Form CSS */
+.calculate-rate{
+    background: #fceaea;
+    padding: 50px;
+}
+.calculate-rate-text h6{
+    color: #606060;
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: 400;
+}
+.calculate-rate-text h1{
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.calculate-from .form-group{
+    margin-bottom: 20px;
+}
+.calculate-from .form-group input{
+    border: none;
+    border-radius: 0;
+    padding: 14px 15px;
+}
+.calculate-from .form-group select{
+    border: none;
+    border-radius: 0;
+    height: 54px;
+}
+.calculate-from .form-group label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+/* Call to Action Css */
+/* Day 33-Part5  */
+
+
+.call-to-action-bg{
+    background: #e73a3e;
+    padding: 60px;
+    color: #fff;
+    padding-bottom: 40px;
+    border-radius: 6px;
+}
+.call-to-action-bg h2{
+    font-size: 40px;
+    font-weight: 400px;
+    border-right: 1px solid #ddd;
+}
+.call-to-action-phone{
+    margin-top: 15px;
+}
+.call-to-action-phone span{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    color: #e73a3e;
+    font-size: 35px;
+    border-radius: 50%;
+    line-height: 60px;
+    text-align: center;
+    margin-right: 30px;
+}
+.call-to-action-phone a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 33px;
+}
+
+/* Our company value Css */
+
+.company-values-title{
+}
+.value-item{
+    margin-bottom: 10px;
+}
+.value-item .value-icon{
+    font-size: 40px;
+    color: #e73a3e;
+    margin-right: 30px;
+}
+.vslue-text{}
+.vslue-text h3{
+    font-weight: 600;
+}
+.vslue-text p{
+    color: #606060;
+}
+.our-company-img{
+    text-align: center;
+    margin-top: 35px;
+    margin-left: 15px;
+}
+
+           /* Day 33 Part-6 */
+       
+ /* Service Section */
+
+ .services-tab-item{
+     border-bottom: 2px solid #cbcbcc;
+     padding-bottom: 20px;
+     margin-bottom: 40px !important;
+ }
+ .services-tab-item li{
+     flex: 1 1 auto;
+ }
+ .services-tab-item li a.active span i{
+     color: #e73a3e;
+ }
+ /* .services-tab-item li{
+    position: relative;
+ }
+ .services-tab-item li::before{
+    content: "";
+    height: 1px;
+    width: 100%;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+ } */
+ .services-tab-item li a span i{
+     background: #fff;
+     height: 80px;
+     width: 80px;
+     border-radius: 50%;
+     line-height: 80px;
+     font-size: 30px;
+     color: #666;
+ }
+ .services-tab-item li a strong{
+     color: #222;
+     font-weight: 600;
+     font-size: 20px;
+ }
+
+ .services-tab-content-text{}
+ .services-tab-content-text ul{
+     list-style: none;
+     padding-left: 0;
+ }
+ .services-tab-content-text ul li::before{
+     content: "";
+     display: inline-block;
+     width: 10px;
+     height: 10px;
+     line-height: 10px;
+     background: red;
+     border-radius: 50%;
+     margin-right: 12px;
+ }
+
+                    /* Day 33 Part-7 */
+               
+ /* Testimonial Section */
+
+ .testimonial-section{
+     margin-top: 80px;
+ }
+ .testimonial-section-title h6{
+     color: #e73a3e;
+     font-size: 20px;
+     font-weight: 500;
+ }
+ .testimonial-section-title h2{
+     font-size: 30px;
+     font-weight: 600;
+ }
+ .testimonial-section-title p{
+    color: #606060;  
+    font-size: 20px; 
+ }
+
+ .testimonial-content{}
+ .testimonial-content p{
+     font-size: 22px;
+ }
+ .client-details{}
+ .client-details h5{
+     color: #e73a3e;
+     margin-bottom: 0;
+ }
+ .client-details p{}
+
+ .testimonial-image{}
+ .testimonial-image img{}
+
+ /* Team Member Css */
+
+ .team-member-section{
+     padding: 50px;
+ }
+ .team-member-title{}
+ .team-member-title h5{
+    color: #e73a3e; 
+ }
+ .team-member-title h1{
+     font-weight: 600;
+ }
+ .team-member-title p{
+     color: #606060;
+     font-size: 20px;
+ }
+
+ .team-member{}
+ .member-image{
+     position: relative;
+ }
+ .member-image img{
+     width: 100%;
+     height: auto;
+ }
+
+ .member-social-icon{
+     position: absolute;
+     bottom: 70px;
+     right: 0;
+     left: 0;
+     margin: auto;
+ }
+ .member-social-icon ul{
+     text-align: center;
+     padding-left: 0;
+ }
+ .member-social-icon ul li{
+     display: inline-block;
+
+     transition: .5s ease-in-out;
+     transform: translateY(55px);
+     opacity: 0;
+     visibility: hidden;
+ }
+ .member-image:hover  .member-social-icon ul li{
+     opacity: 1;
+     visibility: visible;
+     transform: translateY(0);
+ }
+ .member-image .member-social-icon ul li:nth-child(1){
+     transition-delay: .2s;
+ }
+ .member-image .member-social-icon ul li:nth-child(2){
+    transition-delay: .3s;
+ }
+ .member-image .member-social-icon ul li:nth-child(3){
+    transition-delay: .4s;
+ }
+ .member-image .member-social-icon ul li:nth-child(4){
+    transition-delay: .5s;
+ }
+ .member-social-icon ul li a{
+     display: block;
+     font-size: 20px;
+     height: 50px;
+     width: 50px;
+     background: #fff;
+     border-radius: 50%;
+     line-height: 50px;
+ }
